@@ -5,17 +5,17 @@
             </header>
             <div class="site cardEquipe wow animate__animated animate__fadeInUp">
                 <article>
-                    <img src="{{ asset('barista/assets/equipe1.png') }}" alt="Imagem Equipe">
+                    <img src="{{ asset('barista/img/equipe1.png') }}" alt="Imagem Equipe">
                     <h4>Nome</h4>
                     <h5>Função</h5>
                 </article>
                 <article>
-                    <img src="{{ asset('barista/assets/equipe2.png') }}" alt="Imagem Equipe">
+                    <img src="{{ asset('barista/img/equipe2.png') }}" alt="Imagem Equipe">
                     <h4>Nome</h4>
                     <h5>Função</h5>
                 </article>
                 <article>
-                    <img src="{{ asset('barista/assets/equipe3.png') }}" alt="Imagem Equipe">
+                    <img src="{{ asset('barista/img/equipe3.png') }}" alt="Imagem Equipe">
                     <h4>Nome</h4>
                     <h5>Função</h5>
                 </article>

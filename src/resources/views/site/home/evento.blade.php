@@ -5,7 +5,7 @@
     </header>
     <div class="site cardEventos slideEventos wow animate__animated animate__fadeInUp">
         <article>
-            <img src="{{ asset('barista/assets/eventos1.png') }}" alt="Imagem Eventos">
+            <img src="{{ asset('barista/img/eventos1.png') }}" alt="Imagem Eventos">
             <h5>Workshop Especial</h5>
             <h4>Métodos de Preparo Artesanais</h4>
             <div>
@@ -23,7 +23,7 @@
 
                 <div class="linha-grao">
                     <hr>
-                    <img src="{{ asset('barista/assets/coffee.svg') }}" alt="grão">
+                    <img src="{{ asset('barista/img/coffee.svg') }}" alt="grão">
                     <hr>
                 </div>
                 <span class="data">20/10/2025</span>
@@ -31,7 +31,7 @@
         </article>
 
         <article>
-            <img src="{{ asset('barista/assets/eventos2.png') }}" alt="Imagem Eventos">
+            <img src="{{ asset('barista/img/eventos2.png') }}" alt="Imagem Eventos">
             <h5>Workshop Especial</h5>
             <h4>Métodos de Preparo Artesanais</h4>
             <div>
@@ -49,7 +49,7 @@
 
                 <div class="linha-grao">
                     <hr>
-                    <img src="{{ asset('barista/assets/coffee.svg') }}" alt="grão">
+                    <img src="{{ asset('barista/img/coffee.svg') }}" alt="grão">
                     <hr>
                 </div>
                 <span class="data">20/10/2025</span>
@@ -57,7 +57,7 @@
         </article>
 
         <article>
-            <img src="{{ asset('barista/assets/eventos3.png') }}" alt="Imagem Eventos">
+            <img src="{{ asset('barista/img/eventos3.png') }}" alt="Imagem Eventos">
             <h5>Workshop Especial</h5>
             <h4>Métodos de Preparo Artesanais</h4>
             <div>
@@ -75,7 +75,7 @@
 
                 <div class="linha-grao">
                     <hr>
-                    <img src="{{ asset('barista/assets/coffee.svg') }}" alt="grão">
+                    <img src="{{ asset('barista/img/coffee.svg') }}" alt="grão">
                     <hr>
                 </div>
                 <span class="data">20/10/2025</span>
@@ -83,7 +83,7 @@
         </article>
 
         <article>
-            <img src="{{ asset('barista/assets/eventos4.png') }}" alt="Imagem Eventos">
+            <img src="{{ asset('barista/img/eventos4.png') }}" alt="Imagem Eventos">
             <h5>Workshop Especial</h5>
             <h4>Métodos de Preparo Artesanais</h4>
             <div>
@@ -101,7 +101,7 @@
 
                 <div class="linha-grao">
                     <hr>
-                    <img src="{{ asset('barista/assets/coffee.svg') }}" alt="grão">
+                    <img src="{{ asset('barista/img/coffee.svg') }}" alt="grão">
                     <hr>
                 </div>
                 <span class="data">20/10/2025</span>
@@ -109,7 +109,7 @@
         </article>
 
         <article>
-            <img src="{{ asset('barista/assets/eventos1.png') }}" alt="Imagem Eventos">
+            <img src="{{ asset('barista/img/eventos1.png') }}" alt="Imagem Eventos">
             <h5>Workshop Especial</h5>
             <h4>Métodos de Preparo Artesanais</h4>
             <div>
@@ -127,7 +127,7 @@
 
                 <div class="linha-grao">
                     <hr>
-                    <img src="{{ asset('barista/assets/coffee.svg') }}" alt="grão">
+                    <img src="{{ asset('barista/img/coffee.svg') }}" alt="grão">
                     <hr>
                 </div>
                 <span class="data">20/10/2025</span>
@@ -135,7 +135,7 @@
         </article>
 
         <article>
-            <img src="{{ asset('barista/assets/eventos2.png') }}" alt="Imagem Eventos">
+            <img src="{{ asset('barista/img/eventos2.png') }}" alt="Imagem Eventos">
             <h5>Workshop Especial</h5>
             <h4>Métodos de Preparo Artesanais</h4>
             <div>
@@ -153,7 +153,7 @@
 
                 <div class="linha-grao">
                     <hr>
-                    <img src="{{ asset('barista/assets/coffee.svg') }}" alt="grão">
+                    <img src="{{ asset('barista/img/coffee.svg') }}" alt="grão">
                     <hr>
                 </div>
                 <span class="data">20/10/2025</span>
@@ -161,7 +161,7 @@
         </article>
 
         <article>
-            <img src="{{ asset('barista/assets/eventos3.png') }}" alt="Imagem Eventos">
+            <img src="{{ asset('barista/img/eventos3.png') }}" alt="Imagem Eventos">
             <h5>Workshop Especial</h5>
             <h4>Métodos de Preparo Artesanais</h4>
             <div>
@@ -179,7 +179,7 @@
 
                 <div class="linha-grao">
                     <hr>
-                    <img src="{{ asset('barista/assets/coffee.svg') }}" alt="grão">
+                    <img src="{{ asset('barista/img/coffee.svg') }}" alt="grão">
                     <hr>
                 </div>
                 <span class="data">20/10/2025</span>
@@ -187,7 +187,7 @@
         </article>
 
         <article>
-            <img src="{{ asset('barista/assets/eventos4.png') }}" alt="Imagem Eventos">
+            <img src="{{ asset('barista/img/eventos4.png') }}" alt="Imagem Eventos">
             <h5>Workshop Especial</h5>
             <h4>Métodos de Preparo Artesanais</h4>
             <div>
@@ -205,7 +205,7 @@
 
                 <div class="linha-grao">
                     <hr>
-                    <img src="{{ asset('barista/assets/coffee.svg') }}" alt="grão">
+                    <img src="{{ asset('barista/img/coffee.svg') }}" alt="grão">
                     <hr>
                 </div>
                 <span class="data">20/10/2025</span>
