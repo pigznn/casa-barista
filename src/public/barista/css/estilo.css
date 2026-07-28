@@ -1069,3 +1069,11 @@ p{
         width: 100%;
     }
 }
+
+.estrela-inativa{
+    opacity: 0.2;
+}
+
+.estrela-ativa{
+    opacity: 1;
+}

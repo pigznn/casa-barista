@@ -5,36 +5,34 @@
     </header>
 
     <div class="site slideDepoimentos">
-        <article class="dadosDepoimentos">
-            <h4>★★★★★</h4>
-            <p>“Foi muito mais do que tomar um café: foi uma experiência. o sabor do café artesanal é incrivel. Feito com cuidado e o atendimento acolhedor faz a gente se sentir em casa, com certeza o melhor café que eu já provei”</p>
-            <img src="{{ asset('barista/img/depoimento1.png') }}" alt="">
-            <h5>Carmen Lúcia da Silva Soarez</h5>
-            <h6>Data 04/02/2026 <span>Cliente Local</span></h6>
-        </article>
+        
+        @forelse ($listadepo as $linha)
+        
+        @php
+         
+            //Garantir que as estrelas fiquem entre 0 a 5
+            $estrela = max(
+                0,
+                min(5, (int) $linha->nota_depoimento)
+            );
 
-        <article class="dadosDepoimentos">
-            <h4>★★★★★</h4>
-            <p>“Foi muito mais do que tomar um café: foi uma experiência. o sabor do café artesanal é incrivel. Feito com cuidado e o atendimento acolhedor faz a gente se sentir em casa, com certeza o melhor café que eu já provei”</p>
-            <img src="{{ asset('barista/img/depoimento1.png') }}" alt="">
-            <h5>Carmen Lúcia da Silva Soarez</h5>
-            <h6>Data 04/02/2026 <span>Cliente Local</span></h6>
-        </article>
+            //Cliente relacionado com o Depoimento
+            $cliente = $linha->DepoimentoCliente;
 
-        <article class="dadosDepoimentos">
-            <h4>★★★★★</h4>
-            <p>“Foi muito mais do que tomar um café: foi uma experiência. o sabor do café artesanal é incrivel. Feito com cuidado e o atendimento acolhedor faz a gente se sentir em casa, com certeza o melhor café que eu já provei”</p>
-            <img src="{{ asset('barista/img/depoimento1.png') }}" alt="">
-            <h5>Carmen Lúcia da Silva Soarez</h5>
-            <h6>Data 04/02/2026 <span>Cliente Local</span></h6>
-        </article>
+        @endphp
 
-        <article class="dadosDepoimentos">
-            <h4>★★★★★</h4>
-            <p>“Foi muito mais do que tomar um café: foi uma experiência. o sabor do café artesanal é incrivel. Feito com cuidado e o atendimento acolhedor faz a gente se sentir em casa, com certeza o melhor café que eu já provei”</p>
-            <img src="{{ asset('barista/img/depoimento1.png') }}" alt="">
-            <h5>Carmen Lúcia da Silva Soarez</h5>
-            <h6>Data 04/02/2026 <span>Cliente Local</span></h6>
-        </article>
+            <article class="dadosDepoimentos">
+                @for ($i = 1; $i <= 5; $i++)
+                <h4 class="{{ $i <= $estrela ? 'estrela-ativa' : 'estrela-inativa' }}">★</h4>
+                @endfor
+                <p>{{ $linha->descricao_depoimento }}</p>
+                <img src="{{ asset('barista/img/'. $cliente->foto_cliente) }}" alt="{{ $cliente->nome_cliente }}">
+                <h5>{{ $cliente->nome_cliente }}</h5>
+                <h6>Data: {{ $linha->data_criacao_depoimento ? $linha->data_criacao_depoimento :'Data não Disponível' }} <span>{{ $linha->titulo_depoimento }}</span> </h6>
+            </article>
+
+        @empty
+            
+        @endforelse
     </div>
 </section>
