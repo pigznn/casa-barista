@@ -38,7 +38,7 @@ $('.slideEventos').slick({
 });
 
 $('.slideGaleria').slick({
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 500,
