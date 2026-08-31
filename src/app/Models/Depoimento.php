@@ -11,7 +11,7 @@ class Depoimento extends Model{
     protected $primaryKey = 'id_depoimento';
     public $timestamps = true;
 
-    const CREATED_AT = 'data_criacao_cliente';
+    const CREATED_AT = 'data_criacao_depoimento';
     const UPDATED_AT = 'data_atualizacao_depoimento';
 
     protected $fillable = [
@@ -23,7 +23,6 @@ class Depoimento extends Model{
     ];
 
     // Um cliente pode possuir muitos depoimentos
-
     public function DepoimentoCliente(){
         return $this->belongsTo(Cliente::class, 'id_cliente', 'id_cliente');
     }

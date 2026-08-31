@@ -1,12 +1,15 @@
 @extends('layout.site')
 
 @section('content')
-        <!-- BEM-VINDO -->
+
+        <!-- Inicio Sessão Bem Vindo -->
         @include('site.home.bemvindo')
-        
-        <!-- EQUIPE -->
+
+        <!-- INÍCIO DA SEÇÃO EQUIPE -->
         @include('site.home.equipe')
 
-        <!-- DEPOIMENTOS -->
+        <!-- INÍCIO DA SEÇÃO DEPOIMENTO -->
         @include('site.home.depoimento')
+
+    
 @endsection

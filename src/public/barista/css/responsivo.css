@@ -5,11 +5,13 @@
 
 
     .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    flex-direction: column;
-    gap: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        align-items: end;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .menu ul {
@@ -20,11 +22,11 @@
         margin: 20px;
     }
 
-    .menu .redeSocial {
+    .menu div .redeSocial {
         margin: 0 20px;
     }
 
-    .menu .redeSocial li a {
+    .menu div .redeSocial li a {
         margin: 0;
     }
 
@@ -59,12 +61,12 @@
     }
 
     .eventos .slick-prev,
-    .slideDepoimentos .slick-prev {
+    .itensDepo .slick-prev {
         left: 40px;
     }
 
     .eventos .slick-next,
-    .slideDepoimentos .slick-next {
+    .itensDepo .slick-next {
         right: 80px;
     }
 
@@ -75,7 +77,6 @@
 /*##################################*/
 /*      ATÉ 768px (TABLET)       */
 /*##################################*/
-
 @media not all and (max-width: 768px) {
 
     .abrir-menu,
@@ -86,22 +87,6 @@
 
 @media (max-width: 768px) {
 
-    html,
-    body {
-        overflow-x: hidden;
-    }
-
-    .site {
-        box-sizing: border-box;
-    }
-
-    .banner,
-    .destaque,
-    .cardapio,
-    .eventos,
-    .galeria {
-        display: none;
-    }
 
     .topo h1 {
         margin: 10px;
@@ -144,7 +129,7 @@
     }
 
     .abrir-menu {
-        background-image: url(../img/menu-bar.png);
+        background-image: url(../assets/menu.png);
         background-size: cover;
         padding: 18px;
         border: 0;
@@ -153,7 +138,7 @@
     }
 
     .fechar-menu {
-        background-image: url(../img/vote-no.png);
+        background-image: url(../assets/fechar.png);
         background-size: cover;
         padding: 18px;
         border: 0;
@@ -236,32 +221,32 @@
         top: 600px;
     }
 
-    .depoimentos .parallax-padrao h3 {
+    .depo .parallax-padrao h3 {
         font-size: 28px;
         -webkit-text-stroke: .5px var(--cor-fundo-1);
     }
 
-    .dadosDepoimentos p {
+    .dadosDepo p {
         width: 95%;
         font-size: 20px;
     }
 
-    .depoimentos .slideDepoimentos .slick-prev:before,
-    .slideDepoimentos .slick-next:before {
+    .depo .itensDepo .slick-prev:before,
+    .itensDepo .slick-next:before {
         font-size: 40px;
     }
 
-    .depoimentos .slick-next,
-    .slideDepoimentos .slick-next {
+    .depo .slick-next,
+    .itensDepo .slick-next {
         right: 60px;
     }
 
-    .dadosDepoimentos div {
+    .dadosDepo div {
         flex-direction: column;
         align-items: center;
     }
 
-    .dadosDepoimentos h5 {
+    .dadosDepo h5 {
         margin-bottom: 5px;
         font-size: 18px;
     }
@@ -330,23 +315,6 @@
 
 @media (max-width: 380px) {
 
-    html,
-    body {
-        overflow-x: hidden;
-    }
-
-    .site {
-        box-sizing: border-box;
-    }
-
-    .banner,
-    .destaque,
-    .cardapio,
-    .eventos,
-    .galeria {
-        display: none;
-    }
-
     .topo h1 {
         margin: 10px;
     }
@@ -388,7 +356,7 @@
     }
 
     .abrir-menu {
-        background-image: url(../img/menu-bar.png);
+        background-image: url(../assets/menu.png);
         background-size: cover;
         padding: 18px;
         border: 0;
@@ -397,7 +365,7 @@
     }
 
     .fechar-menu {
-        background-image: url(../img/vote-no.png);
+        background-image: url(../assets/fechar.png);
         background-size: cover;
         padding: 18px;
         border: 0;
@@ -476,32 +444,32 @@
         top: 600px;
     }
 
-    .depoimentos .parallax-padrao h3 {
+    .depo .parallax-padrao h3 {
         font-size: 28px;
         -webkit-text-stroke: .5px var(--cor-fundo-1);
     }
 
-    .dadosDepoimentos p {
+    .dadosDepo p {
         width: 95%;
         font-size: 20px;
     }
 
-    .depoimentos .slideDepoimentos .slick-prev:before,
-    .slideDepoimentos .slick-next:before {
+    .depo .itensDepo .slick-prev:before,
+    .itensDepo .slick-next:before {
         font-size: 40px;
     }
 
-    .depoimentos .slick-next,
-    .slideDepoimentos .slick-next {
+    .depo .slick-next,
+    .itensDepo .slick-next {
         right: 60px;
     }
 
-    .dadosDepoimentos {
+    .dadosDepo div {
         flex-direction: column;
         align-items: center;
     }
 
-    .dadosDepoimentos h5 {
+    .dadosDepo h5 {
         margin-bottom: 5px;
         font-size: 18px;
     }

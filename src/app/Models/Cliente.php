@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use illuminate\Database\Eloquent\Model;
 
 Class Cliente extends Model{
 
@@ -21,11 +21,10 @@ Class Cliente extends Model{
         'status_cliente',
     ];
 
-    // Relacionamento onde um CLIENTE pertence a muitos DEPOIMENTOS
-    // belongsTo = pertence a
+    // Relacionameto um CLIENTE pertence a muitos DEPOIMENTOS
+    // hasMany = muitos
     public function ClienteDepoimento(){
         return $this->hasMany(Depoimento::class, 'id_cliente', 'id_cliente');
     }
-
-
+    
 }

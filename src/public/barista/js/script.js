@@ -37,8 +37,8 @@ $('.slideEventos').slick({
     ]
 });
 
-$('.slideGaleria').slick({
-    slidesToShow: 4,
+$('.itensGaleria').slick({
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 500,
@@ -70,7 +70,7 @@ $('.slideGaleria').slick({
     ]
 });
 
-$('.slideDepoimentos').slick({
+$('.itensDepo').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -81,20 +81,20 @@ new WOW().init();
 
 /* MENU MOBILE */
 document.querySelector(".abrir-menu").onclick = function () {
-  //alert("Cliquei no botão ABRIR MENU")
-  document.documentElement.classList.add("menu-mobile");
+    //alert("Cliquei no botão ABRIR MENU")
+    document.documentElement.classList.add("menu-mobile");
 }
 
 document.querySelector(".fechar-menu").onclick = function () {
-  //alert("Cliquei no botão FECHAR MENU")
-  document.documentElement.classList.remove("menu-mobile")
+    //alert("Cliquei no botão FECHAR MENU")
+    document.documentElement.classList.remove("menu-mobile")
 }
 
 // On Scroll
 window.onscroll = function(){
     var top = window.scrollY;
     var topoFixo = document.getElementById('topoFixo');
- 
+
     if(top >= 1100){ // SE top >= 1100 faça:
         //console.log(top);
         topoFixo.classList.remove('saindo');
@@ -111,5 +111,5 @@ window.onscroll = function(){
             });
         }
     }
-   
+    
 }

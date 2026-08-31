@@ -1,8 +1,11 @@
 <?php
 
+
 namespace App\Models;
 
+
 use Illuminate\Database\Eloquent\Model;
+
 
 Class Banner extends Model{
 
@@ -18,3 +21,4 @@ Class Banner extends Model{
     ];
 
 }
+

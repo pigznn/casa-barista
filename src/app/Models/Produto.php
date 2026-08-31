@@ -5,7 +5,7 @@ use App\Models\Categoria;
 
 use Illuminate\Database\Eloquent\Model;
 
-Class Produto extends Model{
+class Produto extends Model{
 
     protected $table = 'tbl_produto';
     protected $primaryKey = 'id_produto';
@@ -23,8 +23,13 @@ Class Produto extends Model{
         'status_produto',
     ];
 
+
     // Um produto pertence a uma categoria
-    public function categoria() {
+    public function categoria() { 
         return $this->belongsTo(Categoria::class, 'id_categoria', 'id_categoria' );
     }
+
 }
+
+
+

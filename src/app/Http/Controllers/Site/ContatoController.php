@@ -6,9 +6,11 @@ use App\Http\Controllers\Controller;
 
 class ContatoController extends Controller
 {
-    public function sobre(){
-        
+
+    public function contato(){
+
         return view('site.contato.contato');
+
     }
 
 }

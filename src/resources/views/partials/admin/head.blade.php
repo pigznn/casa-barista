@@ -1,6 +1,6 @@
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Área administrativa</title>
+    <title>Área Administrativa</title>
 
     <!--begin::Theme Init (prevents flash of incorrect theme on load, #6043)-->
     <script>
@@ -51,7 +51,7 @@
     <!--end::Accessibility Meta Tags-->
 
     <!--begin::Primary Meta Tags-->
-    <meta name="title" content="AdminLTE v4 | Dashboard" />
+    <meta name="title" content="Área Administrativa" />
     <meta name="author" content="ColorlibHQ" />
     <meta
       name="description"
@@ -116,5 +116,5 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="{{asset ('admin/css/style.css') }} ">
+    <link rel="stylesheet" href="{{ asset('admin/css/style.css') }}" />
   </head>

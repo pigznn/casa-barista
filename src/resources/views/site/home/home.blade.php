@@ -1,19 +1,31 @@
 @extends('layout.site')
 
 @section('content')
-    @include('site.home.banner')
 
-    @include('site.home.bemvindo')
+<!-- Inicio Banner -->
+        <!-- Fim Banner -->
+        @include('site.home.banner')
 
-    @include('site.home.destaque')
+        <!-- Inicio Sessão Bem Vindo -->
+        @include('site.home.bemvindo')
 
-    @include('site.home.cardapio')
+        <!-- Inicio Sessão Destaque --> 
+        @include('site.home.destaque')  
 
-    @include('site.home.equipe')
+        <!-- INÍCIO DA SEÇÃO CARDÁPIO -->
+        @include('site.home.cardapio')
 
-    @include('site.home.evento')
+        <!-- INÍCIO DA SEÇÃO EQUIPE -->
+        @include('site.home.equipe')
 
-    @include('site.home.galeria')
+        <!-- INÍCIO DA SEÇÃO EVENTO -->
+        @include('site.home.evento')
 
-    @include('site.home.depoimento')
+        <!-- INÍCIO DA SEÇÃO GALERIA -->
+        @include('site.home.galeria')
+
+        <!-- INÍCIO DA SEÇÃO DEPOIMENTO -->
+        @include('site.home.depoimento')          
+
+
 @endsection

@@ -1,17 +1,15 @@
-@extends ('layout.site')
+@extends('layout.site')
 
 @section('content')
-<body class="pg-contato">
-        <!-- Começo banner -->
+
+        <!-- Fim Banner -->
         @include('site.home.banner')
-        <!-- Final banner -->
 
-        <!-- Começo Formulário -->
-        @include('site.contato.formulario')
-        <!-- Final Formulário -->
+        <!-- INÍCIO DA SEÇÃO EQUIPE -->
+        @include('site.contato.cont-contato')
 
-        <!-- Começo da seção mapa -->
-        @include('site.contato.mapa')
-        <!-- Final da seção mapa -->
-</body>
+        <!-- INÍCIO DA SEÇÃO MAP -->
+        @include('site.contato.map')
+
+    
 @endsection

@@ -31,7 +31,7 @@ services:
       - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-
+  
   phpmyadmin:
     image: phpmyadmin:latest
     container_name: casa-barista-phpmyadmin

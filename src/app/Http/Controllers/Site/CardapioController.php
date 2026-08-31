@@ -2,16 +2,14 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Models\Galeria;
 use App\Models\Categoria;
 use App\Models\Produto;
 use App\Http\Controllers\Controller;
 
-class CardapioController extends Controller{
+class CardapioController extends Controller
+{
 
     public function cardapio(?int $idCategoria = null){
-
-        $listagaleria = Galeria::where('status_galeria', 'ATIVO')->InRandomOrder()->get();
 
         $listaCategorias = Categoria::where('status_categoria', 'ATIVO')
         ->orderBy('nome_categoria')
@@ -25,10 +23,9 @@ class CardapioController extends Controller{
         }
 
         //Caso não tenha a categoria
-        abort_if($categoriaSelecionada === null, 404, 'Categoria não encontrada');
+        abort_if($categoriaSelecionada === null, 404, 'Categoria não encontada');
 
-        //Buscar somente os produtos relacionados a categoria
-
+        //Buscar somente os produtos relacionado a categoria
         $listaProdutos = Produto::where('status_produto', 'ATIVO')
         ->orderBy('nome_produto')
         ->get();
@@ -40,9 +37,10 @@ class CardapioController extends Controller{
         ->get();
 
         //dd($produtos);
+        //dd($listaCategorias);
 
-        //dd($listaProdutos);
+        return view('site.cardapio.cardapio', compact('listaCategorias', 'listaProdutos', 'produtos', 'categoriaSelecionada'));
 
-        return view('site.cardapio.cardapio', compact('listaCategorias', 'listaProdutos', 'categoriaSelecionada', 'listagaleria', 'produtos'));
     }
+
 }

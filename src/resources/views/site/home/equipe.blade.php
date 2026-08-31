@@ -1,23 +1,27 @@
-<section class="equipe wow animate__animated animate__fadeInUp">
-            <header class="parallax-padrao">
-                <h2>Equipe</h2>
-                <h3>Por trás de cada xícara existe uma equipe apaixonada pelo que faz.</h3>
-            </header>
-            <div class="site cardEquipe wow animate__animated animate__fadeInUp">
-                <article>
-                    <img src="{{ asset('barista/img/equipe1.png') }}" alt="Imagem Equipe">
-                    <h4>Nome</h4>
-                    <h5>Função</h5>
-                </article>
-                <article>
-                    <img src="{{ asset('barista/img/equipe2.png') }}" alt="Imagem Equipe">
-                    <h4>Nome</h4>
-                    <h5>Função</h5>
-                </article>
-                <article>
-                    <img src="{{ asset('barista/img/equipe3.png') }}" alt="Imagem Equipe">
-                    <h4>Nome</h4>
-                    <h5>Função</h5>
-                </article>
-            </div>
-        </section>
+<section class="equipe">
+    <header class="parallax-padrao  wow animate__animated animate__fadeInUp">
+        <h2>Quem Somos</h2>
+        <h3>O café é feito por pessoas</h3>
+    </header>
+
+    <div class="site cardEquipe  wow animate__animated animate__fadeInUp">
+        <article>
+            <img src="{{ asset('barista/img/barista1.png') }}" alt="Lucas Ribeiro - Barista Especialista">
+            <h4>Lucas Ribeiro</h4>
+            <h5>Barista Especialista</h5>
+        </article>
+
+        <article>
+            <img src="{{ asset('barista/img/barista2.png') }}" alt="Mariana Alves - Mestre de Torr">
+            <h4>Mariana Alves</h4>
+            <h5>Mestre de Torra</h5>
+        </article>
+
+        <article>
+            <img src="{{ asset('barista/img/barista3.png') }}" alt="Renato Silva - Atendimento e Experiência do Cliente">
+            <h4>Renato Silva</h4>
+            <h5>Atendimento e Experiência do Cliente</h5>
+        </article>
+    </div>
+
+</section>
