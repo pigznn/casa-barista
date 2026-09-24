@@ -1,1 +1,2 @@
-/backup/
+# Configurações locais do Docker
+.env
