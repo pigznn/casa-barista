@@ -24,6 +24,16 @@ Route::get('/contato', [ContatoController::class, 'contato'])->name('contato');
 
 Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 
+// Formulários do site (limite de 5 envios por minuto para evitar spam)
+Route::post('/contato', [ContatoController::class, 'store'])->middleware('throttle:5,1,contato')->name('contato.st');
+
+
+/*
+|-------------------------------------------------------------------------------
+//                            DOCUMENTAÇÃO API
+--------------------------------------------------------------------------------
+Route::view('/documentacao', 'api.documentacao')->name('api.documentacao');
+*/
 // RORAS DASHBOARD
 Route::prefix('admin')->group(function (){
 
