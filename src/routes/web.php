@@ -4,6 +4,7 @@ use App\Http\Controllers\Site\CardapioController;
 use App\Http\Controllers\Site\ContatoController;
 use App\Http\Controllers\Site\EventoController;
 use App\Http\Controllers\Site\HomeController;
+use App\Http\Controllers\Site\NewsletterController as SiteNewsletterController;
 use App\Http\Controllers\Site\SobreController;
 
 use App\Http\Controllers\Admin\AdminController;
@@ -11,7 +12,19 @@ use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\GaleriaController;
 use App\Http\Controllers\Admin\ProdutoController;
 use App\Http\Controllers\Admin\CategoriaController;
+use App\Http\Controllers\Admin\ClienteController;
+use App\Http\Controllers\Admin\UsuarioController;
+use App\Http\Controllers\Admin\VendaController;
+use App\Http\Controllers\Admin\LocalController;
+use App\Http\Controllers\Admin\MensagemController;
+use App\Http\Controllers\Admin\PerfilController;
+use App\Http\Controllers\Admin\EquipeController;
+use App\Http\Controllers\Admin\DepoimentoController;
+use App\Http\Controllers\Admin\LinhaTempoController;
+use App\Http\Controllers\Admin\NewsletterController;
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\Auth\LoginController;
 
 
 // RORAS WEB
@@ -24,16 +37,6 @@ Route::get('/contato', [ContatoController::class, 'contato'])->name('contato');
 
 Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 
-// Formulários do site (limite de 5 envios por minuto para evitar spam)
-Route::post('/contato', [ContatoController::class, 'store'])->middleware('throttle:5,1,contato')->name('contato.st');
-
-
-/*
-|-------------------------------------------------------------------------------
-//                            DOCUMENTAÇÃO API
---------------------------------------------------------------------------------
-Route::view('/documentacao', 'api.documentacao')->name('api.documentacao');
-*/
 // RORAS DASHBOARD
 Route::prefix('admin')->group(function (){
 
